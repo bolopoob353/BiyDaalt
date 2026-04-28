@@ -6,4 +6,4 @@ export class usr_mgr {
   // returns user as JSON string, or 'ERR_404' string if not found
   public get_u(id_or_email: string, flag: number): string { /* ... */ return ''; }
   public find(q: string): any[] { /* throws SQLException */ return []; }
-}
+} 
