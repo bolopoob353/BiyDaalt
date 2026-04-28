@@ -9,9 +9,9 @@ export class RateLimiterFactory {
   static create(type: LimiterType): RateLimiter {
     switch (type) {
       case "fixed":
-        return new FixedWindowLimiter(5, 60000);
+        return new FixedWindowLimiter(5, 1000);
       case "sliding":
-        return new SlidingWindowLimiter(5, 60000);
+        return new SlidingWindowLimiter(5, 1000);
       case "token":
         return new TokenBucketLimiter(5, 1);
       default:

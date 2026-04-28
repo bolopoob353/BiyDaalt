@@ -12,4 +12,11 @@ Return  type - get_u нь  string буцаадаг Хэрэглэгч олдво
 Холимог параметр (Dual-purpose parameter)
 get_u(id_or_email, flag) — нэг параметр хоёр өөр утга агуулж байна (id эсвэл email). flag дахин тодорхойлогдоогүй. getUserById(id) ба getUserByEmail(email) гэж салгах хэрэгтэй.
 Алдаа 7 
-timeout параметр тdo_user_op-д timeout параметр байгаа ч API-д энэ нь дотоод хэрэгжилтийн асуудал — caller-т ил байх ёсгүй.
+timeout параметр тdo_user_op-д timeout параметр байгаа ч API-д энэ нь дотоод хэрэгжилтийн асуудал caller-т ил байх ёсгүй.
+
+
+ RateLimiter interface ашигласан → implementation солиход амар
+ Factory pattern → concrete class-уудыг нууцалсан
+ 3 implementation → FixedWindow, SlidingWindow, TokenBucket
+ Custom error class ашигласан
+ Unit test (15+) → correctness баталсан
